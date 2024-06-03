@@ -1,32 +1,32 @@
-import data from '../../artigos.json'
+import data from '../../articles.json'
 
 function Home() {
-    console.log(data)
-    
     return ( 
         <>
-        <input type="text" id="buscar" placeholder='Digite sua busca'/>
-        <div className='grid grid-cols-3 gap-4'> 
-        {data.map( filme => (
-                <div className='card' key={filme.title}>
-                    <h1>{filme.title}</h1>
-                    <img src={filme.image} alt={filme.title} />
-                    <div className='text'>
-                            {filme.text.map(text => (
-                                <span key={text}> {text} </span>
+            <input type="text" id="buscar" placeholder='Buscar uma notícia' />
+            <div className='grid grid-cols-3 gap-4'>
+            {
+                data.map( (artigo, index) => (
+                    <div className='card' key={index}>
+                        <h2>{artigo.title}</h2>
+                        <img className="mb-2" src={artigo.image} alt={artigo.title} />
+                        <div className='tags'>
+                            {artigo.tags.map( (tag, index) => (
+                                <span className="bg-purple-600 p-1 m-1 rounded " key={index}>{tag}</span>
                             ))}
+                        </div>
+                        <div className='texto'>
+                        {artigo.text.map( (paragrafo,index) => (
+                            <p key={index}>{paragrafo}</p>
+                        ))}
+                        </div>
+
                     </div>
-                    <div className='tag'>
-                            {filme.tags.map(tag => (
-                                <span key={tag} className='text-purple-900'> {tag} </span>
-                            ))}
-                    </div><br></br>
-                </div>
-            ))
-        }
-        </div>
+                ))
+            }
+            </div>
         </>
-        );
+    );
 }
 
 export default Home ;
