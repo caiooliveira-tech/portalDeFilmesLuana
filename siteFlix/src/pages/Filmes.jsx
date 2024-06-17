@@ -21,11 +21,11 @@ function Filmes() {
 
     return ( 
         <>
-        <h1>Filmes</h1>
-        <div className="listaFilmes flex flex-row gap-3">
+
+        <div className="listaFilmes grid grid-cols-3 gap-3 p-7">
             {
                 filmes.map(filme => (
-                    <div className="card-filme" key={filme.id}>
+                    <div className="card-filme p-4" key={filme.id}>
                         <img src={`${urlImg}${filme.poster_path}`}/>
                         <h1>{filme.title}</h1>
                         <Link className="bg-blue-500" to={`${filme.id}`}>Saber Mais</Link>

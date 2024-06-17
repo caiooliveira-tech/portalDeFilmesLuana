@@ -1,8 +1,10 @@
 import data from '../../articles.json'
+import Banner from '../componentes/Banner/Banner';
 
 function Home() {
     return ( 
         <>
+        <Banner/>
             <input type="text" id="buscar" placeholder='Buscar uma notícia' />
             <div className='grid grid-cols-3 gap-4'>
             {
