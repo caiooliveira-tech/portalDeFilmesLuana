@@ -9,6 +9,9 @@ module.exports = withMt({
   ],
   theme: {
     extend: {
+      width: {
+        '128': '64rem',
+      },
       colors: {
         "marrom": "#501104",
         "mClaro": "#B0948E"

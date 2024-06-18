@@ -1,8 +1,15 @@
 import { useEffect, useState } from "react";
 import {Link} from 'react-router-dom'
+import Banner2 from '../componentes/Banner2/Banner2';
+import Pesq from '../componentes/Pesq/Pesq';
+import Footer from "../componentes/Footer/Footer";
+
+const formatarDataBrasileira = (dataIso) => {
+    const [ano, mes, dia] = dataIso.split('-');
+    return `${dia}/${mes}/${ano}`;
+}
 
 function Filmes() {
-
     const [filmes, setFilmes] = useState([])
     const apiKey='api_key=d585b66222a73fca5fc14f7d1568b41f'
     const urlBase='https://api.themoviedb.org/3/movie/'
@@ -15,28 +22,28 @@ function Filmes() {
         .then(response => setFilmes(response.results))
         .catch(erro => console.log(erro))
 
-
     },[])
     
 
     return ( 
         <>
-
-        <div className="listaFilmes grid grid-cols-3 gap-3 p-7">
+        <Pesq/>
+        <Banner2/>
+        <div className="listaFilmes grid grid-cols-3 gap-3 pr-7 pl-7 pb-7">
             {
                 filmes.map(filme => (
-                    <div className="card-filme p-4" key={filme.id}>
-                        <img src={`${urlImg}${filme.poster_path}`}/>
-                        <h1>{filme.title}</h1>
-                        <Link className="bg-blue-500" to={`${filme.id}`}>Saber Mais</Link>
-                        
+                    <div className="card-filme p-4 text-center" key={filme.id}>
+                        <Link className="bg-blue-500" to={`${filme.id}`}><img src={`${urlImg}${filme.poster_path}`}/></Link>
+                        <h1 className="pt-2">{filme.title}</h1>
+                        <h1>{formatarDataBrasileira(filme.release_date)}</h1>         
                     </div>
                 ))
             }
         </div>
+        <Footer/>
         
         </>
      );
 }
 
-export default Filmes ;
+export default Filmes;

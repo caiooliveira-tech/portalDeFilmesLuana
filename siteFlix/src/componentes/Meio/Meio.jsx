@@ -12,15 +12,21 @@ function Meio(){
                         src={filmes}
                         alt="nature image"
                     />
-                    <h1 className= "absolute bottom-60 right-40">
-                    Acompanhe as tendências e 
-                    organize seus filmes 
+                    <h1 className= "absolute right-20 text-4xl ">
+                    Acompanhe as tendências e organize seus filmes 
                     </h1>
-                    <div className="absolute bottom-20 right-60">
+                    <div className="absolute bottom-10 right-60">
                     <Button size="lg" className='bg-white text-marrom' ><Link to="filmes">Ir para a página de filmes</Link></Button>
                     </div>
                 </div>
+                
             </div>  
+
+            <h1 className="text-4xl flex justify-around font-bold tracking-tight bg-marrom text-white sm:text-3xl md:text-4xl p-4">
+                <span className="block">
+                    Comentários da comunidade
+                </span>
+            </h1>
         </>
     )
 }
