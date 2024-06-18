@@ -9,15 +9,6 @@
     "tags": ["cinema", "podcast"]
     },
     {
-    "title": "Discussões e análises sobre os filmes mais recentes",
-    "image": "godKong.webp",
-    "text": [
-    "Participe das discussões animadas sobre os filmes mais recentes na nossa comunidade do Discord! Todos os dias, os amantes do cinema se reúnem para trocar ideias, compartilhar opiniões e descobrir novas pérolas cinematográficas. Não perca a chance de fazer parte dessa comunidade apaixonada por cinema!",
-    "Junte-se a nós no Discord e mergulhe em debates sobre os últimos lançamentos, clássicos cult e tudo mais que envolve o mundo do cinema. Não importa se você é um cinéfilo experiente ou apenas está começando a explorar esse universo fascinante - há sempre algo interessante acontecendo em nossa comunidade."
-    ],
-    "tags": ["cinema", "discord"]
-    },
-    {
         "title": "Novidades no mundo do cinema",
         "image": "idea.webp",
         "text": [
@@ -34,23 +25,5 @@
         "Junte-se a nós no Discord e mergulhe em debates sobre os últimos lançamentos, clássicos cult e tudo mais que envolve o mundo do cinema. Não importa se você é um cinéfilo experiente ou apenas está começando a explorar esse universo fascinante - há sempre algo interessante acontecendo em nossa comunidade."
         ],
         "tags": ["cinema", "discord"]
-        },
-        {
-            "title": "Novidades no mundo do cinema",
-            "image": "duble.webp",
-            "text": [
-            "Esta semana foi repleta de novidades emocionantes no mundo do cinema! Novos trailers, anúncios de elenco e detalhes dos bastidores têm deixado os fãs ansiosos para o que está por vir. Não perca nada do que está acontecendo no universo cinematográfico com as últimas atualizações.",
-            "Confira o mais recente podcast dedicado ao cinema, onde especialistas discutem os lançamentos mais aguardados, as tendências da indústria e os bastidores das produções. Fique por dentro de todas as notícias quentes e análises aprofundadas sobre o mundo do entretenimento cinematográfico!"
-            ],
-            "tags": ["cinema", "podcast"]
-            },
-            {
-            "title": "Discussões e análises sobre os filmes mais recentes",
-            "image": "guerraCivil.webp",
-            "text": [
-            "Participe das discussões animadas sobre os filmes mais recentes na nossa comunidade do Discord! Todos os dias, os amantes do cinema se reúnem para trocar ideias, compartilhar opiniões e descobrir novas pérolas cinematográficas. Não perca a chance de fazer parte dessa comunidade apaixonada por cinema!",
-            "Junte-se a nós no Discord e mergulhe em debates sobre os últimos lançamentos, clássicos cult e tudo mais que envolve o mundo do cinema. Não importa se você é um cinéfilo experiente ou apenas está começando a explorar esse universo fascinante - há sempre algo interessante acontecendo em nossa comunidade."
-            ],
-            "tags": ["cinema", "discord"]
-            }
+        }
     ]

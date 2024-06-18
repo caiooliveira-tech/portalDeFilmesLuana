@@ -1,16 +1,20 @@
 import data from '../../articles.json'
 import Banner from '../componentes/Banner/Banner';
+import Footer from '../componentes/Footer/Footer';
+import Meio from '../componentes/Meio/Meio';
+import Pesq from '../componentes/Pesq/Pesq';
 
 function Home() {
     return ( 
         <>
+        <Pesq/>
         <Banner/>
-            <input type="text" id="buscar" placeholder='Buscar uma notícia' />
-            <div className='grid grid-cols-3 gap-4'>
+        <Meio/>
+        <div className='block max-w-sm gap-4 p-5 '>
             {
                 data.map( (artigo, index) => (
-                    <div className='card' key={index}>
-                        <h2>{artigo.title}</h2>
+                    <div className='card pb-5' key={index}>
+                        <h2>{artigo.title}</h2> 
                         <img className="mb-2" src={artigo.image} alt={artigo.title} />
                         <div className='tags'>
                             {artigo.tags.map( (tag, index) => (
@@ -27,6 +31,7 @@ function Home() {
                 ))
             }
             </div>
+        <Footer/>
         </>
     );
 }

@@ -1,17 +1,19 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+
+const withMt = require("@material-tailwind/react/utils/withMT");
+module.exports = withMt({
+  darkMode: 'class',
   content: [
     "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
+    "./src/**/*.{js,jsx}",
   ],
   theme: {
     extend: {
       colors: {
-        'primary-raul': '#735ABC'
+        "marrom": "#501104",
+        "mClaro": "#B0948E"
       }
     },
   },
   plugins: [],
-
-}
-
+})
