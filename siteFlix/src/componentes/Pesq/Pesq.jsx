@@ -1,7 +1,7 @@
 function Pesq(){
     return(
         <>
-        <div className="flex rounded-full border-2 overflow-hidden max-w-md mx-auto right-7 font-[sans-serif]">
+        <div className="flex rounded-full border-2 overflow-hidden max-w-md right-7 font-[sans-serif]">
           <input type="email" placeholder="Digite sua busca"
             className="w-full  placeholder-white outline-none bg-mClaro text-sm px-5 py-3" />
           <button type='button' className="flex items-center justify-center bg-marrom px-6">
