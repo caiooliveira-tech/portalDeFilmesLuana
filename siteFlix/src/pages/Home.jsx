@@ -1,7 +1,6 @@
 import data from '../../articles.json'
 
 import Banner from '../componentes/Banner/Banner';
-import Footer from '../componentes/Footer/Footer';
 import Meio from '../componentes/Meio/Meio';
 import Pesq from '../componentes/Pesq/Pesq';
 
@@ -60,7 +59,6 @@ function Home() {
                 ))
             }
             </div>
-        <Footer/>
         
         </>
     );

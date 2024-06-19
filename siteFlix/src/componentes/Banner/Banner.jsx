@@ -1,5 +1,5 @@
 import { Carousel } from "@material-tailwind/react";
-import img1 from '../../../public/godKong.jpg'
+import img1 from '../../../public/godkong.jpg'
 import img2 from '../../../public/divert.jpg'
 import img3 from '../../../public/civil.jpg'
 

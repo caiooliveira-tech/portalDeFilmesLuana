@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import {Link} from 'react-router-dom'
 import Banner2 from '../componentes/Banner2/Banner2';
 import Pesq from '../componentes/Pesq/Pesq';
-import Footer from "../componentes/Footer/Footer";
 
 const formatarDataBrasileira = (dataIso) => {
     const [ano, mes, dia] = dataIso.split('-');
@@ -40,7 +39,6 @@ function Filmes() {
                 ))
             }
         </div>
-        <Footer/>
         
         </>
      );

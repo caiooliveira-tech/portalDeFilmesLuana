@@ -34,7 +34,7 @@ function Footer(){
             color="white"
             className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500"
           >
-            Favoritos
+            Noticías
           </Typography>
         </li>
         <li>
