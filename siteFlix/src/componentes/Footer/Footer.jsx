@@ -30,7 +30,7 @@ function Footer(){
         <li>
           <Typography
             as="a"
-            href="sobre"
+            href="noticias"
             color="white"
             className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500"
           >

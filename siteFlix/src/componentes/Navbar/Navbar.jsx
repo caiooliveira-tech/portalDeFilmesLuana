@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom'
 function Navbar() {
     return ( 
         <nav>
-        <ul className='flex gap-3 text-white'>
+        <ul className='flex gap-5 text-white '>
         <li><Link to ="/">Menu</Link></li>
         <li><Link to ="filmes"> Filmes</Link></li>
         <li><Link to ="noticias">Noticías</Link></li>
