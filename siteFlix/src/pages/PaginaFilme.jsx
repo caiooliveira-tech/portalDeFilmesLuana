@@ -21,6 +21,7 @@ function PaginaFilme() {
         const creditsData = await creditsResponse.json();
         const diretorData = creditsData.crew.find(member => member.job === 'Director');
         setDiretor(diretorData ? diretorData.name : 'N/A');
+
       } catch (erro) {
         console.log(erro);
       }
@@ -50,6 +51,7 @@ function PaginaFilme() {
           <p className="text-gray-200 text-1xl mb-4"><strong>Diretor:</strong> {diretor}</p>
           <p className="text-gray-200 text-1xl mb-4"><strong>Data de Lançamento:</strong> {formatarDataBrasileira(filme.release_date)}</p>
           <p className="text-gray-200 text-1xl mb-4"><strong>Sinopse:</strong> {filme.overview}</p>
+          <p className="text-gray-200 text-1xl mb-4"><strong>Avaliação de 0 a 10:</strong> {filme.vote_average}</p>
         </div>
         <Link to="/filmes">
           <button type="button" className="absolute bottom-5 right-5 flex items-center justify-center px-5 py-2 text-sm text-white bg-marrom border rounded-lg gap-x-2">
