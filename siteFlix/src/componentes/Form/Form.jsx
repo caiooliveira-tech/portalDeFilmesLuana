@@ -1,3 +1,5 @@
+import imgBack from '../../../public/moviesCont.jpg'
+
 function Form(){
     return(
         <>
@@ -15,7 +17,8 @@ function Form(){
                       </form>
                   </div>
               </div>
-              <div className="lg:max-w-xl w-full h-[600px] flex items-center justify-center  bg-cover bg-no-repeat bg-[url('../../../public/moviesCont.jpg')]">
+              <div className="lg:max-w-xl w-full h-[600px] flex items-center justify-center bg-cover bg-no-repeat"
+              style={{ backgroundImage: `url(${imgBack})` }}>
                   <div className="">
                       <div className="lg:w-96 w-auto h-auto bg-mClaro shadow-xl lg:p-6 p-4">
                         
