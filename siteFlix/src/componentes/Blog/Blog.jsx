@@ -1,4 +1,4 @@
-import data from '../../../noticias.json'
+import infosNot from '../../../noticiasDados.json'
 
 function Blog(){
     return (
@@ -11,7 +11,7 @@ function Blog(){
          
                 <ul className="grid gap-x-8 gap-y-10 pt-8 sm:grid-cols-2 lg:grid-cols-3">
                     {
-                        data.map((items, key) => (
+                        infosNot.map((items, key) => (
                             <li className="w-full mx-auto group sm:max-w-sm" key={key}>
                                 <a href={items.href}>
                                     <img src={items.img} loading="lazy" alt={items.title} className="w-70 rounded-lg" />
