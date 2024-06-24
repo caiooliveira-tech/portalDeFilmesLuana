@@ -1,4 +1,5 @@
 import { Typography } from "@material-tailwind/react";
+import {Link} from "react-router-dom";
 
 function Footer(){
     return(
@@ -8,24 +9,24 @@ function Footer(){
       </Typography>
       <ul className="flex flex-wrap items-center gap-y-2 gap-x-8">
         <li>
+          <Link to = "/">
           <Typography
-            as="a"
-            href="/"
             color="white"
             className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500"
           >
             Menu
           </Typography>
+          </Link>
         </li>
         <li>
+        <Link to = "/">
           <Typography
-            as="a"
-            href="filmes"
             color="white"
             className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500"
           >
             Filmes
           </Typography>
+          </Link>
         </li>
         <li>
           <Typography
