@@ -19,7 +19,7 @@ function Footer(){
           </Link>
         </li>
         <li>
-        <Link to = "/">
+        <Link to = "filmes">
           <Typography
             color="white"
             className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500"
